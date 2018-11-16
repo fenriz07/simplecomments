@@ -50,10 +50,8 @@ class Plugin extends PluginBase
      */
     public function registerComponents()
     {
-        return []; // Remove this line to activate
-
         return [
-            'Cmantikweb\Simplecomments\Components\MyComponent' => 'myComponent',
+            Components\Boxcommment::class => 'boxcomment',
         ];
     }
 

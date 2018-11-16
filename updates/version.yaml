@@ -1,1 +1,5 @@
-1.0.1: First version of simplecomments
+1.0.1: 
+        - First version of simplecomments
+1.0.2: 
+        - Add model comments
+        - create_comments_table.php
