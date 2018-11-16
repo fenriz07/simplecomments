@@ -16,4 +16,6 @@ class Boxcomment extends ComponentBase
     {
         return [];
     }
+
+ 
 }

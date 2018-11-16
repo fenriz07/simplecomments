@@ -51,7 +51,8 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            Components\Boxcomment::class => 'boxcomment',
+            Components\Boxcomment::class   => 'boxcomment',
+            Components\Listcomments::class => 'listcomments',
         ];
     }
 
