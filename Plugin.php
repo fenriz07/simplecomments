@@ -80,13 +80,11 @@ class Plugin extends PluginBase
      */
     public function registerNavigation()
     {
-        return []; // Remove this line to activate
-
         return [
             'simplecomments' => [
-                'label'       => 'simplecomments',
-                'url'         => Backend::url('cmantikweb/simplecomments/mycontroller'),
-                'icon'        => 'icon-leaf',
+                'label'       => 'Comments',
+                'url'         => Backend::url('cmantikweb/simplecomments/comments'),
+                'icon'        => 'icon-comment-o',
                 'permissions' => ['cmantikweb.simplecomments.*'],
                 'order'       => 500,
             ],
