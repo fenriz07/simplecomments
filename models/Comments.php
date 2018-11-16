@@ -28,9 +28,9 @@ class Comments extends Model
     public $hasOne = [];
     public $hasMany = [];
     public $belongsTo = [
+        'posts' => ['Rainlab\Blog\Models\Post','key' => 'post_id'],
     ];
     public $belongsToMany = [
-        'posts' => ['Rainlab\Blog\Models\Post','key' => 'post_id'],
     ];
     public $morphTo = [];
     public $morphOne = [];

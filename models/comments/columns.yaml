@@ -6,3 +6,15 @@ columns:
     id:
         label: ID
         searchable: true
+    post:
+        label: Post Title
+        relation: posts
+        select: title
+    comment:
+        label: Comentario
+    name:
+        label: Autor
+    email:
+        label: Email
+
+

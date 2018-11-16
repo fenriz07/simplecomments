@@ -3,6 +3,17 @@
 # ===================================
 
 fields:
-    id:
-        label: ID
-        disabled: true
+    posts:
+        label: Post Title
+        type: relation
+        select: title        
+    comment:
+        label: Comentario
+        type: text
+    name:
+        label: Autor
+        type: text
+    email:
+        label: Email
+        type: text
+
