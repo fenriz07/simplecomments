@@ -20,7 +20,7 @@ class Comments extends Model
     /**
      * @var array Fillable fields
      */
-    protected $fillable = [];
+    protected $fillable = ['name','comment','email','post_id'];
 
     /**
      * @var array Relations

@@ -7,8 +7,8 @@ class Boxcomment extends ComponentBase
     public function componentDetails()
     {
         return [
-            'name'        => 'boxcomment Component',
-            'description' => 'No description provided yet...'
+            'name'        => 'Despliega un formulario para dejar el comentario',
+            'description' => ''
         ];
     }
 

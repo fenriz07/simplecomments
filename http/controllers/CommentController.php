@@ -1,30 +1,27 @@
 <?php
 
 namespace Cmantikweb\Simplecomments\Http\Controllers;
+ 
+use Flash;
+use Cmantikweb\Simplecomments\Models\Comments;
+use Cmantikweb\Simplecomments\Http\Requests\CreateCommentRequest;
 
 class CommentController extends BaseController
 {
-    protected $posts;
 
-    public function __construct(Posts $posts)
+    public function __construct()
     {
-        $this->posts = $posts;
+        $this->middleware('web');  
     }
 
-    public function index()
-    {
 
-        return $this->posts->all();
-    }
-
-    public function show($id)
+    public function store(CreateCommentRequest $request)
     {
-        return $this->posts->find($id);
-    }
+        Comments::create($request->all());
 
-    public function store(CreatePostRequest $request)
-    {
-        return $request->all();
+        Flash::success('Comentario agregado con exito!');
+
+        return back();
     }
 
 }

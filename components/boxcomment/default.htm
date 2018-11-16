@@ -1,3 +1,22 @@
-<p>This is the default markup for component boxcomment</p>
+<form action="/cmtikweb_sc_post" method="post">
 
-<small>You can delete this file if you want</small>
+    <input  type="text" name="post_id" value="{{post.id}}" style="display: none;">
+    
+    <label for="comment">COMMENT</label>
+    <input id="comment" type="text" name="comment">
+    <span class="error-validation"> {{ errors.first('comment') }} </span>
+
+    <label for="name">NAME</label>
+    <input id="name" type="text" name="name">
+    <span class="error-validation"> {{ errors.first('name') }} </span>
+
+    <label for="email">EMAIL</label>
+    <input id="email" type="email" name="email">
+    <span class="error-validation"> {{ errors.first('email') }} </span>
+
+    {% flash %}
+        <h4> {{ message }} </h4>
+    {% endflash %}
+
+    <input class="Component-Button --Reply" type="submit" value="SEND">
+</form>
