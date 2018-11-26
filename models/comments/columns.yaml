@@ -11,9 +11,9 @@ columns:
         relation: posts
         select: title
     comment:
-        label: Comentario
+        label: Commentary
     name:
-        label: Autor
+        label: Author
     email:
         label: Email
 

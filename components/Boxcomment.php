@@ -7,7 +7,7 @@ class Boxcomment extends ComponentBase
     public function componentDetails()
     {
         return [
-            'name'        => 'Despliega un formulario para dejar el comentario',
+            'name'        => 'Render the comment form',
             'description' => ''
         ];
     }

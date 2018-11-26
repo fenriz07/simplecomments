@@ -1,6 +1,6 @@
 {% set comments = __SELF__.comments %}
 
-<form action="/cmtikweb_sc_post" method="post">
+<form action="{{url('/')}}/cmtikweb_sc_post" method="post">
 
     <input  type="text" name="post_id" value="{{post.id}}" style="display: none;">
     

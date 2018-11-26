@@ -8,10 +8,10 @@ fields:
         type: relation
         select: title        
     comment:
-        label: Comentario
+        label: Commentary
         type: text
     name:
-        label: Autor
+        label: Author
         type: text
     email:
         label: Email

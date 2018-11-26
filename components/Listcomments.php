@@ -8,7 +8,7 @@ class Listcomments extends ComponentBase
     public function componentDetails()
     {
         return [
-            'name'        => 'Lista de comentarios',
+            'name'        => 'List of comments',
             'description' => '',
         ];
     }
@@ -25,9 +25,5 @@ class Listcomments extends ComponentBase
         $comments = Comments::where('post_id',$post->id)->get();
 
         return $comments;
-
-        return dd($comments);
-
-        return dd($post->id);
     }
 }

@@ -1,6 +1,6 @@
 scopes:
     posts:
-        label: Selecciones el o los posts del blog que desea ver sus comentarios
+        label: select the blog post (s) you want to see your comments
         modelClass: Rainlab\Blog\Models\Post
         conditions: post_id in (:filtered)
         nameFrom: title
