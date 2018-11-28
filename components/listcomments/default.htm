@@ -1,10 +1,10 @@
 {% set comments = __SELF__.comments %}
-
-
+ 
+ 
 {% if comments.count != 0 %}
-<div class="Component-Post-Coments-Section Component-Padding-Sides --Post-Bottom">
+<div class="Component-Post-Coments-Section">
     <span>COMMENTS ({{comments.count}})</span>
-
+ 
     {% for comment in comments %}
     <div class="Component-Post-Coments-Section__Coment">
         <p>
@@ -13,8 +13,8 @@
         <span>
             BY {{comment.name}}
         </span>
-        </div>
-        <div class="Divider"></div>
+    </div>
+    <div class="Divider"></div>
     {% endfor %}
 </div>
 {% endif %}
