@@ -27,6 +27,7 @@ class CreateCommentRequest extends Base
             'comment' => 'required|string',
             'name'    => 'required|string',
             'email'   => 'required|email',
+            'terms'   => 'required|accepted',
         ];
     }
 
