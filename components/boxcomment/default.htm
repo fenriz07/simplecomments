@@ -4,15 +4,15 @@
  
     <input type="text" name="post_id" value="{{post.id}}" style="display: none;">
  
-    <label for="comment">COMMENT</label>
+    <label for="comment">{{'COMMENT'|_}}</label>
     <input id="comment" type="text" name="comment">
     <span class="error-validation"> {{ errors.first('comment') }} </span>
  
-    <label for="name">NAME</label>
+    <label for="name">{{'NAME'|_}}</label>
     <input id="name" type="text" name="name">
     <span class="error-validation"> {{ errors.first('name') }} </span>
  
-    <label for="email">EMAIL</label>
+    <label for="email">{{'EMAIL'|_}}</label>
     <input id="email" type="email" name="email">
     <span class="error-validation"> {{ errors.first('email') }} </span>
  
@@ -25,12 +25,12 @@
             <input type="checkbox" name="terms" id="terms" />
             <label for="terms">
                 <u>
-                    <strong>{{CONSIENTO EL TRATAMIENTO DE MIS DATOS|_}}</strong>
+                    <strong>{{'I CONSENT THE PROCESSING OF MY DATA'|_}}</strong>
                     <br>
-                    <span>{{ESTOY DE ACUERDO CON EL ALMACENAMIENTO Y USO DE MIS DATOS DE CONFORMIDAD CON LA|_}}
+                    <span>{{'I AGREE WITH THE STORAGE AND USE OF MY DATA IN COMPLIANCE WITH THE'|_}}
                         <strong>
-                            <a href="#"> {{POLITICA DE PRIVACIDAD|_}}</a>
-                        </strong>, {{ASÍ COMO CON EL|_}}
+                            <a href="#"> {{'PRIVACY POLICY'|_}}</a>
+                        </strong>
                     </span>
                 </u>
             </label>
