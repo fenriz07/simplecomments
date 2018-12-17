@@ -26,7 +26,6 @@
             <label for="terms">
                 <u>
                     <strong>{{'I CONSENT THE PROCESSING OF MY DATA'|_}}</strong>
-                    <br>
                     <span>{{'I AGREE WITH THE STORAGE AND USE OF MY DATA IN COMPLIANCE WITH THE'|_}}
                         <strong>
                             <a href="#"> {{'PRIVACY POLICY'|_}}</a>
@@ -36,6 +35,6 @@
             </label>
         </p>
     </div>
-    <span class="error-validation"> {{ errors.first('terms') }} </span>
+    <span class="error-validation --leftop"> {{ errors.first('terms') }} </span>
     <input class="Component-Button --Reply" type="submit" value="SEND">
 </form>
